@@ -35,7 +35,7 @@ User (Browser)
 
 ---
 
-## 🛠️ AWS Services Used
+ 🛠️ AWS Services Used
 
 | Service | Purpose |
 |---|---|
@@ -46,7 +46,7 @@ User (Browser)
 
 ---
 
-## 📁 Repository Structure
+ 📁 Repository Structure
 
 ```
 aws-static-website-hosting/
@@ -87,11 +87,11 @@ aws-static-website-hosting/
 
 ---
 
-## 🚀 Deployment Steps (Summary)
+ 🚀 Deployment Steps (Summary)
 
-> **Note:** Steps 1–3 were configured via the **AWS Management Console (UI)**. Step 4 was executed using the **AWS CLI** for deployment automation practice.
+> Note: Steps 1–3 were configured via the **AWS Management Console (UI). Step 4 was executed using the AWS CLI for deployment automation practice.
 
-### 1. Create S3 Bucket *(AWS Console)*
+ 1. Create S3 Bucket *(AWS Console)*
 - Navigate to S3 → Create Bucket
 - Bucket name: `alwin-portfolio-static-site`
 - Region: `ap-south-1` (Mumbai)
