@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- ============================================================
+    ✏️  UPDATE: Change the title to your name / tagline
+  ============================================================ -->
+  <title>AR | Portfolio</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- ============================================================
+    NOISE OVERLAY — keeps the background textured, do not remove
+  ============================================================ -->
+  <div class="noise"></div>
+
+  <!-- ================================================================
+    HEADER — Update your name, role, and social links below
+  ================================================================ -->
+  <header>
+    <div class="header-inner">
+
+      <div class="logo">
+        <!-- ✏️ UPDATE: Replace with your initials or short name -->
+        <span class="logo-text">AR</span>
+        <span class="logo-dot"></span>
+      </div>
+
+      <nav class="tab-nav">
+        <button class="tab-btn active" data-tab="summary">Summary</button>
+        <button class="tab-btn" data-tab="skills">Skills</button>
+        <button class="tab-btn" data-tab="projects">Projects</button>
+        <button class="tab-btn" data-tab="experience">Experience</button>
+      </nav>
+
+      <div class="header-links">
+        <!-- ✏️ UPDATE: Add your actual GitHub and LinkedIn URLs -->
+        <a href="https://github.com/AlwinRoy777" target="_blank" class="icon-link" title="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/></svg>
+        </a>
+        <a href="www.linkedin.com/in/alwinroy777/" target="_blank" class="icon-link" title="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <!-- ✏️ UPDATE: Replace with your email address -->
+  <a href="mailto:alwinroy38@gmail.com"> class="icon-link" title="Email">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ================================================================
+    MAIN CONTENT AREA
+  ================================================================ -->
+  <main>
+
+    <!-- ============================================================
+      TAB 1: SUMMARY
+    ============================================================ -->
+    <section class="tab-content active" id="summary">
+      <div class="section-inner">
+
+        <div class="summary-hero">
+          <div class="summary-text">
+            <p class="greeting">Hey, I'm</p>
+            <!-- ✏️ UPDATE: Your full name -->
+            <h1 class="hero-name">Alwin Roy</h1>
+            <!-- ✏️ UPDATE: Your current role / tagline -->
+            <p class="hero-role">BCA Graduate &amp; DevOps Engineer </p>
+            <!-- ✏️ UPDATE: A short 2-3 sentence bio about yourself -->
+            <p class="hero-bio">
+              I recently completed my Bachelor of Computer Applications from <strong>Jecrc University</strong> (2022–2025)
+              and I'm currently pursuing a Diploma in DevOps Engineering at <strong>Synnefo Solutions</strong> (2025–Present).
+              I'm passionate about building reliable, scalable systems and bridging the gap between development and operations.
+            </p>
+
+            <div class="hero-actions">
+              <!-- ✏️ UPDATE: Link to your resume (upload to the repo and update path) -->
+              <a href="AlwinRoy_cv.pdf" download class="btn-primary">Download Resume</a>
+              <button class="btn-ghost" onclick="switchTab('projects')">View Projects</button>
+            </div>
+          </div>
+
+          <div class="summary-card-stack">
+            <div class="info-card card-1">
+              <span class="card-label">Status</span>
+              <!-- ✏️ UPDATE: Change if you get hired 🎉 -->
+              <span class="card-value">Open to Opportunities</span>
+            </div>
+            <div class="info-card card-2">
+              <span class="card-label">Location</span>
+              <!-- ✏️ UPDATE: Your city / state -->
+              <span class="card-value">Kerala, India</span>
+            </div>
+            <div class="info-card card-3">
+              <span class="card-label">Focus</span>
+              <span class="card-value">DevOps · Cloud · CI/CD</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+      TAB 2: SKILLS
+    ============================================================ -->
+    <section class="tab-content" id="skills">
+      <div class="section-inner">
+
+        <div class="section-header">
+          <h2>Skills</h2>
+          <p class="section-sub">Technologies and tools I work with</p>
+        </div>
+
+        <div class="skills-grid">
+
+          <!-- ✏️ UPDATE: Add / remove skill categories and items as needed -->
+
+          <div class="skill-category">
+            <h3 class="category-title">
+              <span class="cat-icon">⚙️</span> DevOps & Cloud
+            </h3>
+            <div class="skill-tags">
+              <span class="tag">Docker</span>
+              <span class="tag">Kubernetes</span>
+              <span class="tag">CI/CD Pipelines</span>
+              <span class="tag">Jenkins</span>
+              <span class="tag">GitHub Actions</span>
+              <span class="tag">AWS</span>
+              <span class="tag">Linux</span>
+              <span class="tag">Bash Scripting</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="category-title">
+              <span class="cat-icon">💻</span> Programming
+            </h3>
+            <div class="skill-tags">
+              <!-- ✏️ UPDATE: Add your languages -->
+              <span class="tag">Python</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">HTML & CSS</span>
+              <span class="tag">SQL</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="category-title">
+              <span class="cat-icon">🛠️</span> Tools & Platforms
+            </h3>
+            <div class="skill-tags">
+              <!-- ✏️ UPDATE: Add your tools -->
+              <span class="tag">Git & GitHub</span>
+              <span class="tag">VS Code</span>
+              <span class="tag">Kubernetes</span>
+              <span class="tag">Nginx</span>
+              <span class="tag">Terraform (Learning)</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="category-title">
+              <span class="cat-icon">🌱</span> Currently Learning
+            </h3>
+            <div class="skill-tags">
+              <!-- ✏️ UPDATE: What you're actively studying -->
+              <span class="tag tag-learning">Ansible</span>
+              <span class="tag tag-learning">Prometheus & Grafana</span>
+              <span class="tag tag-learning">AWS Solutions Architect</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+      TAB 3: PROJECTS
+    ============================================================ -->
+    <section class="tab-content" id="projects">
+      <div class="section-inner">
+
+        <div class="section-header">
+          <h2>Projects</h2>
+          <p class="section-sub">Things I've built and explored</p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- ✏️ UPDATE: Replace with your actual projects. Duplicate this card for more projects. -->
+          <div class="project-card">
+            <div class="project-top">
+              <span class="project-tag">DevOps</span>
+              <!-- ✏️ UPDATE: GitHub repo link -->
+              <a href="https://github.com/YOUR_USERNAME/project-repo" target="_blank" class="project-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+            <!-- ✏️ UPDATE: Project name -->
+            <h3 class="project-title">CI/CD Pipeline Setup</h3>
+            <!-- ✏️ UPDATE: Project description -->
+            <p class="project-desc">
+              Built an automated CI/CD pipeline using GitHub Actions and Docker to containerize and deploy a web application. Includes automated testing, build, and deployment stages.
+            </p>
+            <div class="project-stack">
+              <!-- ✏️ UPDATE: Tech used in this project -->
+              <span>GitHub Actions</span><span>Docker</span><span>Nginx</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-top">
+              <span class="project-tag">Web</span>
+              <a href="https://github.com/YOUR_USERNAME/project-repo-2" target="_blank" class="project-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+            <h3 class="project-title">Personal Portfolio Website</h3>
+            <p class="project-desc">
+              Designed and developed this responsive portfolio from scratch using HTML, CSS, and vanilla JavaScript. Hosted on GitHub Pages.
+            </p>
+            <div class="project-stack">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-top">
+              <span class="project-tag">Automation</span>
+              <a href="https://github.com/YOUR_USERNAME/project-repo-3" target="_blank" class="project-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+            <h3 class="project-title">Server Monitoring Script</h3>
+            <p class="project-desc">
+              A Bash script that monitors CPU, memory, and disk usage on Linux servers and sends alerts via email when thresholds are exceeded.
+            </p>
+            <div class="project-stack">
+              <span>Bash</span><span>Linux</span><span>Cron</span>
+            </div>
+          </div>
+
+          <!-- ✏️ ADD MORE PROJECT CARDS HERE by copying the block above -->
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+      TAB 4: EXPERIENCE
+    ============================================================ -->
+    <section class="tab-content" id="experience">
+      <div class="section-inner">
+
+        <div class="section-header">
+          <h2>Experience</h2>
+          <p class="section-sub">My academic and professional journey</p>
+        </div>
+
+        <div class="timeline">
+
+          <!-- ✏️ UPDATE: Add your experience items. Most recent first. -->
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="tl-header">
+                <div>
+                  <!-- ✏️ UPDATE: Your current course / role -->
+                  <h3 class="tl-title">Diploma in DevOps Engineering</h3>
+                  <!-- ✏️ UPDATE: Institute name -->
+                  <p class="tl-org">Synnefo Solutions</p>
+                </div>
+                <span class="tl-date">2025 — Present</span>
+              </div>
+              <p class="tl-desc">
+                <!-- ✏️ UPDATE: What you're learning / doing here -->
+                Currently learning industry-standard DevOps practices including containerization with Docker and Kubernetes,
+                infrastructure as code, CI/CD pipeline automation, cloud platforms, and monitoring solutions.
+              </p>
+              <div class="tl-tags">
+                <span>Docker</span><span>Kubernetes</span><span>CI/CD</span><span>Linux</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="tl-header">
+                <div>
+                  <!-- ✏️ UPDATE: Your degree -->
+                  <h3 class="tl-title">Bachelor of Computer Applications (BCA)</h3>
+                  <!-- ✏️ UPDATE: Your university name -->
+                  <p class="tl-org">Jecrc University</p>
+                </div>
+                <span class="tl-date">2022 — 2025</span>
+              </div>
+              <p class="tl-desc">
+                <!-- ✏️ UPDATE: Describe your studies, achievements, or notable coursework -->
+                Completed a three-year undergraduate program covering core computer science fundamentals including
+                data structures, algorithms, database management, web technologies, software engineering, and networking.
+              </p>
+              <div class="tl-tags">
+                <span>DBMS</span><span>Networking</span><span>Web Dev</span><span>OOP</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- ✏️ ADD MORE TIMELINE ITEMS HERE (internships, certifications, etc.) -->
+          <!--
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="tl-header">
+                <div>
+                  <h3 class="tl-title">YOUR ROLE / CERTIFICATION</h3>
+                  <p class="tl-org">ORGANISATION NAME</p>
+                </div>
+                <span class="tl-date">Month Year — Month Year</span>
+              </div>
+              <p class="tl-desc">
+                Description of what you did here.
+              </p>
+              <div class="tl-tags">
+                <span>Tag1</span><span>Tag2</span>
+              </div>
+            </div>
+          </div>
+          -->
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================================================================
+    FOOTER — Update your name and links
+  ================================================================ -->
+  <footer>
+    <!-- ✏️ UPDATE: Your name -->
+    <p>Crafted by <strong>AR</strong> &mdash; Built with HTML, CSS &amp; JS &mdash; Hosted on GitHub Pages</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
