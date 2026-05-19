@@ -95,7 +95,7 @@ aws-static-website-hosting/
 - Navigate to S3 → Create Bucket
 - Bucket name: `alwin-portfolio-static-site`
 - Region: `ap-south-1` (Mumbai)
-- Block public access: **disabled** (required for static hosting)
+- Block public access: **disable** (required for static hosting)
 
  2. Enable Static Website Hosting (AWS Console)*
 - S3 → Bucket → Properties → Static Website Hosting → **Enable**
