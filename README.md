@@ -12,7 +12,7 @@ The goal was to move beyond local hosting and understand how real-world static w
 
 ---
 
-## 🏗️ Architecture
+ 🏗️ Architecture
 
 ```
 User (Browser)
@@ -112,56 +112,55 @@ aws s3 sync ./website s3://alwin-portfolio-static-site \
   --exclude ".git/*"
 ```
 
-### 5. Create CloudFront Distribution *(AWS Console)*
+ 5. Create CloudFront Distribution (AWS Console)*
 - Origin: S3 bucket static website endpoint
 - HTTPS: Enabled (via CloudFront default certificate)
 - Caching: Default CloudFront policy
 
 > Full step-by-step guide: [`docs/setup-steps.md`](docs/setup-steps.md)
 
----
 
-## 🌐 Live Demo
+
+   🌐 Live Demo
 
 | Access Method | URL |
-|---|---|
-| CloudFront URL | `https://dxxxxx.cloudfront.net` |
+
+| CloudFront URL | `d1hbdac1e4e56e.cloudfront.net` |
 | S3 Website Endpoint | `http://alwin-portfolio-static-site.s3-website.ap-south-1.amazonaws.com` |
 
----
 
-## 📸 Screenshots
+
+   📸 Screenshots
 
 | S3 Bucket | CloudFront Distribution | Live Website |
-|---|---|---|
+
 | ![S3](screenshots/s3-bucket.png) | ![CloudFront](screenshots/cloudfront-distribution.png) | ![Website](screenshots/website-output.png) |
 
----
 
-## 💡 Key Concepts Learned
 
-- **S3 Static Hosting** — Serving HTML/CSS/JS directly from object storage without a web server
-- **Bucket Policies** — JSON-based IAM policies to control who can access S3 objects
-- **CloudFront CDN** — How edge locations cache and serve content globally with low latency
-- **HTTPS Delivery** — CloudFront provides SSL/TLS without managing certificates manually
-- **AWS CLI** — Deploying and managing cloud infrastructure from the terminal
-- **Cost Awareness** — Monitoring billing, setting alerts, and cleaning up unused resources
+   💡 Key Concepts Learned
 
----
+- S3 Static Hosting — Serving HTML/CSS/JS directly from object storage without a web server
+  Bucket Policies — JSON-based IAM policies to control who can access S3 objects
+- CloudFront CDN — How edge locations cache and serve content globally with low latency
+- HTTPS Delivery — CloudFront provides SSL/TLS without managing certificates manually
+- AWS CLI — Deploying and managing cloud infrastructure from the terminal
+- Cost Awareness — Monitoring billing, setting alerts, and cleaning up unused resources
 
-## ⚠️ Issues Faced & Fixed
+
+
+ ⚠️ Issues Faced & Fixed
 
 | Problem | Root Cause | Fix |
-|---|---|---|
+
 | `403 AccessDenied` on S3 URL | Missing public read bucket policy | Applied correct bucket policy JSON |
 | `.git/` folder uploaded to S3 | `sync` without exclude flag | Added `--exclude ".git/*"` to sync command |
 | CloudFront serving old files | Browser/edge cache not cleared | Created CloudFront invalidation |
 
 > Full troubleshooting log: [`docs/troubleshooting.md`](docs/troubleshooting.md)
 
----
 
-## 🔮 Future Improvements
+  🔮 Future Improvements
 
 - [ ] Add custom domain using Route 53 + ACM SSL certificate
 - [ ] Set up CI/CD pipeline (GitHub Actions → S3 auto-deploy on push)
@@ -169,12 +168,7 @@ aws s3 sync ./website s3://alwin-portfolio-static-site \
 - [ ] Add CloudWatch billing alarm for cost monitoring
 - [ ] Implement S3 versioning for rollback capability
 
----
 
-## 👤 Author
-
-**Alwin Roy**
-DevOps Engineering Student | BCA Graduate
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://linkedin.com/in/alwinroy)
 [![GitHub](https://img.shields.io/badge/GitHub-AlwinRoy777-black?logo=github)](https://github.com/AlwinRoy777)
@@ -182,6 +176,3 @@ DevOps Engineering Student | BCA Graduate
 
 ---
 
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
