@@ -38,9 +38,6 @@ User (Browser)
  🛠️ AWS Services Used
 
 | Service | Purpose |
-
-|---|---|---|
-
 | Amazon S3 | Stores and serves static website files |
 | Amazon CloudFront | CDN for global delivery, HTTPS, and edge caching |
 | IAM / Bucket Policy | Controls public read access to S3 objects |
