@@ -51,38 +51,27 @@ User (Browser)
 ```
 aws-static-website-hosting/
 │
-├── README.md                   # Project documentation (this file)
-├── .gitignore                  # Prevents sensitive/unnecessary files from uploading
+├── README.md                             # Project documentation (this file)
+├── .gitignore                            # Prevents sensitive/unnecessary files from uploading
 │
-├── website/                    # Deployable frontend files
+├── website/                              # Deployable frontend files
 │   ├── index.html
 │   ├── style.css
 │   ├── script.js
 │   ├── AlwinRoy_cv.pdf
-│   └── assets/
-│       ├── images/             # Profile photo, project screenshots
-│       └── icons/              # GitHub, LinkedIn, AWS SVG icons
 │
-├── aws-cli/                    # CLI commands and configuration files
-│   ├── s3-sync-command.md      # Deployment command with explanation
-│   ├── bucket-policy.json      # S3 public read bucket policy
-│   └── cloudfront-config.json  # CloudFront distribution config
-│
-├── screenshots/                # Visual proof of setup (for portfolio)
-│   ├── s3-bucket.png
-│   ├── static-hosting.png
-│   ├── bucket-policy.png
-│   ├── cloudfront-distribution.png
+├── screenshots/                       # Visual proof of setup (for portfolio)
+│   ├── cli command for sync.png
+    ├── cloud_front distribution.png
+    ├── cloudfront_origin.png
+    ├── s3_bucket properties.png
+    ├── s3-bucket_listed.png
+│   ├── s3_static enabled.png
+    ├── bucket policy.png
 │   └── website-output.png
 │
 ├── diagrams/                   # Architecture diagrams
 │   └── architecture.png
-│
-└── docs/                       # Detailed documentation
-    ├── project-overview.md
-    ├── setup-steps.md
-    ├── troubleshooting.md
-    └── learning-notes.md
 ```
 
 ---
@@ -122,7 +111,6 @@ aws s3 sync ./website s3://alwin-portfolio-static-site \
 - HTTPS: Enabled (via CloudFront default certificate)
 - Caching: Default CloudFront policy
 
-> **Full step-by-step guide:** [`docs/setup-steps.md`](docs/setup-steps.md)
 
 ---
 
