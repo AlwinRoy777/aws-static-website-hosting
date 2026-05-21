@@ -127,7 +127,7 @@ aws s3 sync ./website s3://alwin-portfolio-static-site \
 
 | S3 Bucket | CloudFront Distribution | Live Website |
 |-----------|-------------------------|--------------|
-| ![S3](screenshots/s3-bucket.png) | ![CloudFront](screenshots/cloudfront-distribution.png) | ![Website](screenshots/website-output.png) |
+| ![S3](screenshots/s3bucket_listed.png) | ![CloudFront](screenshots/cloud_front distribution.png) | ![Website](screenshots/website_output.png) |
 
 ---
 
