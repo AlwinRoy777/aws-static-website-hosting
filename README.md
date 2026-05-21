@@ -127,7 +127,7 @@ aws s3 sync ./website s3://alwin-portfolio-static-site \
 
 | S3 Bucket | CloudFront Distribution | Live Website |
 |-----------|-------------------------|--------------|
-| ![S3](screenshots/s3bucket_listed.png) | ![CloudFront](screenshots/cloud_front distribution.png) | ![Website](screenshots/website_output.png) |
+| ![S3](screenshots/s3bucket_listed.png) | ![CloudFront](screenshots/cloud_front_distribution.png) | ![Website](screenshots/website_output.png) |
 
 ---
 
@@ -150,7 +150,6 @@ aws s3 sync ./website s3://alwin-portfolio-static-site \
 | `.git/` folder uploaded to S3 | `sync` without exclude flag | Added `--exclude ".git/*"` to sync command |
 | CloudFront serving old files | Browser/edge cache not cleared | Created CloudFront invalidation |
 
-> **Full troubleshooting log:** [`docs/troubleshooting.md`](docs/troubleshooting.md)
 
 ---
 
